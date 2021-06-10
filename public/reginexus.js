@@ -38,7 +38,7 @@ const onClickSign = async () => {
     ethereum.sendAsync({method, params, from},
       function (err, response) {
         signature.textContent = response.result
-        command.textContent = "/link " + accounts[0]+" "+response.result;
+        command.textContent = "/verify " + accounts[0]+" "+response.result;
         console.log('Response json: ' + JSON.stringify(response))
       }
     );

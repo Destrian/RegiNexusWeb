@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Deposit</title>
+    <link rel="shortcut icon" type="image/jpg" href="icon.png"/>
+    <script src="web3.min.js"></script>
+  </head>
+
+  <body>
+    <h1>Deposit minecraft items to ChainCraft</h1>
+    <h3>Connect to metamask</h3>
+    <button id="connect">Connect</button>
+    <p>Selected account: </p>
+    <p id="account"></p>
+    <h3>Choose item</h3>
+    <input type="text" id="input" disabled="true">
+    <button type="button" id="select" disabled="true">Select</button>
+    <p>Balance: </p>
+    <p id="balance"></p>
+    <h3>Deposit item</h3>
+    <p>Amount to deposit: </p>
+    <input type="range" min="1" max="1" value="1" class="slider" id="slider" disabled="true">
+    <button type="button" id="approve" disabled="true" >Approve</button>
+    <button type="button" id="deposit" disabled="true">Deposit</button>
+    <p id="output"></p>
+  </body>
+  <script src="abi.js"></script>
+  <script src="deposit.js"></script>
+</html>
