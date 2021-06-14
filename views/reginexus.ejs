@@ -5,23 +5,19 @@
     <title>RegiNexus</title>
     <link rel="shortcut icon" type="image/jpg" href="icon.png"/>
   </head>
-
+  
   <body>
-    <h1>Link your Minecraft UUID to RegiNexus</h1>
-    <h3>Connect to metamask</h3>
-    <button id="connect">Connect</button>
-    <h3>Generate signature</h3>
-    <button type="button" id="sign">Sign</button>
-    <h3>Your information:</h3>
-    <p>Selected account: </p>
-    <p id="account"></p>
-    <p>Selected UUID: </p>
+    <center>
+    <h2>RegiNexus</h2>
+    <p>Wallet:</p>
+    <p id="account">-</p>
+    <p>UUID:</p>
     <p id="uuid"><%= uuidvar %></p>
-    <p>Generated signature:</p>
-    <p id="signature"></p>
-    <p>Your command: </p>
+    <button id="connect">Connect Wallet</button>
+    <button type="button" id="sign">Generate signature</button>
+    <p>Command: </p>
     <p id="command"></p>
-    
+    </center>
   </body>
   <script src="reginexus.js"></script>
   <script src="datahash.js"></script>

@@ -8,7 +8,6 @@ const connect = document.getElementById('connect');
 const sign = document.getElementById('sign');
 //Information display
 const account = document.getElementById('account');
-const signature = document.getElementById('signature');
 const command = document.getElementById('command');
 
 const uuid = document.getElementById('uuid').textContent;
@@ -37,7 +36,6 @@ const onClickSign = async () => {
 
     ethereum.sendAsync({method, params, from},
       function (err, response) {
-        signature.textContent = response.result
         command.textContent = "/verify " + accounts[0]+" "+response.result;
         console.log('Response json: ' + JSON.stringify(response))
       }
