@@ -14,9 +14,11 @@
     <p>UUID:</p>
     <p id="uuid"><%= uuidvar %></p>
     <button id="connect">Connect Wallet</button>
-    <button type="button" id="sign">Generate signature</button>
+    <button type="button" id="sign" disabled =true>Generate signature</button>
     <p>Command: </p>
-    <p id="command"></p>
+    <input id="command" readonly>
+    <button type="button" id="copy" disabled=true>Copy</button>
+    <p id="copiedmsg"></p>
     </center>
   </body>
   <script src="reginexus.js"></script>
