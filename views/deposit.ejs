@@ -8,22 +8,26 @@
   </head>
 
   <body>
-    <h1>Deposit minecraft items to ChainCraft</h1>
-    <h3>Connect to metamask</h3>
-    <button id="connect">Connect</button>
-    <p>Selected account: </p>
-    <p id="account"></p>
-    <h3>Choose item</h3>
-    <input type="text" id="input" disabled="true">
-    <button type="button" id="select" disabled="true">Select</button>
-    <p>Balance: </p>
-    <p id="balance"></p>
-    <h3>Deposit item</h3>
-    <p>Amount to deposit: </p>
+    <center>
+    <h2>Deposit</h2>
+    <button id="connect">Connect Wallet</button>
+    <p>Wallet:</p>
+    <p id="account">-</p>
+    
+    <select id="input" disabled="true">
+      <option value="DIRT">DIRT</option>
+      <option value="STONE">STONE</option>
+    </select>
+
+
+    <button type="button" id="select" disabled="true">Choose item</button>
+    <p>Balance: <text id="balance"></p>
+    
     <input type="range" min="1" max="1" value="1" class="slider" id="slider" disabled="true">
     <button type="button" id="approve" disabled="true" >Approve</button>
     <button type="button" id="deposit" disabled="true">Deposit</button>
     <p id="output"></p>
+    </center>
   </body>
   <script src="abi.js"></script>
   <script src="deposit.js"></script>
